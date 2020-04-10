@@ -1,0 +1,133 @@
+Tried to use an uninitialized DefOf of type DamageDefOf. DefOfs are initialized right after all defs all loaded. Uninitialized DefOfs will return only nulls. (hint: don't use DefOfs as default field values in Defs, try to resolve them in ResolveReferences() instead) Debug info: DirectXmlToObject is currently instantiating an object of type RRYautja.HediffCompProperties_DamageOverTime
+Verse.Log:Warning(String, Boolean)
+RimWorld.DefOfHelper:EnsureInitializedInCtor(Type)
+RimWorld.DamageDefOf:.cctor()
+System.Object:__icall_wrapper_mono_generic_class_init(IntPtr)
+RRYautja.HediffCompProperties_DamageOverTime:.ctor()
+System.Reflection.MonoCMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoCMethod:InternalInvoke(Object, Object[])
+System.RuntimeType:CreateInstanceMono(Boolean)
+System.RuntimeType:CreateInstanceSlow(Boolean, Boolean, Boolean, StackCrawlMark&)
+System.RuntimeType:CreateInstanceDefaultCtor(Boolean, Boolean, Boolean, StackCrawlMark&)
+System.Activator:CreateInstance(Type, Boolean)
+System.Activator:CreateInstance(Type)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ListFromXml(XmlNode)
+Verse.DirectXmlToObject:ListFromXmlReflection(XmlNode)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlLoader:DefFromNode(XmlNode, LoadableXmlAsset)
+Verse.LoadedModManager:ParseAndProcessXML(XmlDocument, Dictionary`2)
+Verse.LoadedModManager:LoadAllActiveMods()
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+
+
+PrisonLaborException: FindOperandAfter() didn't find any lines. Trace:  at PrisonLabor.HarmonyPatches.HPatcher.FindOperandAfter (System.Reflection.Emit.OpCode[] opCodes, System.String[] operands, System.Collections.Generic.IEnumerable`1[T] instr, System.Boolean perfectMatch) [0x00000] in <09d3158e5bda4b7d9e819e7307f3baa9>:0 
+  at PrisonLabor.HarmonyPatches.Patches_GUI.GUI_Bill.Patch_BillCheckbox+<Transpiler>d__0.MoveNext () [0x00000] in <09d3158e5bda4b7d9e819e7307f3baa9>:0 
+  at System.Collections.Generic.List`1[T]..ctor (System.Collections.Generic.IEnumerable`1[T] collection) [0x00000] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at System.Linq.Enumerable.ToList[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00000] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at HarmonyLib.CodeTranspiler.GetResult (System.Reflection.Emit.ILGenerator generator, System.Reflection.MethodBase method) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.MethodBodyReader.FinalizeILCodes (HarmonyLib.Emitter emitter, System.Collections.Generic.List`1[T] transpilers, System.Collections.Generic.List`1[T] endLabels, System.Boolean& hasReturnCode) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.MethodCopier.Finalize (HarmonyLib.Emitter emitter, System.Collections.Generic.List`1[T] endLabels, System.Boolean& hasReturnCode) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.MethodPatcher.CreateReplacement (System.Collections.Generic.Dictionary`2[System.Int32,HarmonyLib.CodeInstruction]& finalInstructions) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.PatchFunctions.UpdateWrapper (System.Reflection.MethodBase original, HarmonyLib.PatchInfo patchInfo) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.PatchClassProcessor.ProcessPatchJob (HarmonyLib.PatchJobs`1+Job[T] job) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.PatchClassProcessor.PatchWithAttributes (System.Reflection.MethodBase& lastOriginal) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.PatchClassProcessor.Patch () [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.Harmony.<PatchAll>b__10_0 (System.Type type) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.CollectionExtensions.Do[T] (System.Collections.Generic.IEnumerable`1[T] sequence, System.Action`1[T] action) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.Harmony.PatchAll (System.Reflection.Assembly assembly) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at PrisonLabor.HarmonyPatches.HPatcher.Init () [0x00000] in <09d3158e5bda4b7d9e819e7307f3baa9>:0 
+  at PrisonLabor.Initialization..cctor () [0x00000] in <09d3158e5bda4b7d9e819e7307f3baa9>:0 
+  at System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor (System.IntPtr type) [0x00000] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor (System.RuntimeTypeHandle type) [0x00000] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at Verse.StaticConstructorOnStartupUtility.CallAll () [0x00000] in <c8e8d421567e4ee5864626a429a27a37>:0 
+  at Verse.PlayDataLoader+<>c.<DoPlayLoad>b__4_2 () [0x00000] in <c8e8d421567e4ee5864626a429a27a37>:0 
+  at Verse.LongEventHandler.ExecuteToExecuteWhenFinished () [0x00000] in <c8e8d421567e4ee5864626a429a27a37>:0 
+  at Verse.LongEventHandler.UpdateCurrentAsynchronousEvent () [0x00000] in <c8e8d421567e4ee5864626a429a27a37>:0 
+  at Verse.LongEventHandler.LongEventsUpdate (System.Boolean& sceneChanged) [0x00000] in <c8e8d421567e4ee5864626a429a27a37>:0 
+  at Verse.Root.DMD<DMD<Update_Patch1>?-196705536::Update_Patch1> (Verse.Root ) [0x00000] in <c8e8d421567e4ee5864626a429a27a37>:0 
+  at Verse.Root_Entry.Update () [0x00000] in <c8e8d421567e4ee5864626a429a27a37>:0 
+Verse.Log:Error(String, Boolean)
+PrisonLabor.HarmonyPatches.HPatcher:FindOperandAfter(OpCode[], String[], IEnumerable`1, Boolean)
+PrisonLabor.HarmonyPatches.Patches_GUI.GUI_Bill.<Transpiler>d__0:MoveNext()
+System.Collections.Generic.List`1:.ctor(IEnumerable`1)
+System.Linq.Enumerable:ToList(IEnumerable`1)
+HarmonyLib.CodeTranspiler:GetResult(ILGenerator, MethodBase)
+HarmonyLib.MethodBodyReader:FinalizeILCodes(Emitter, List`1, List`1, Boolean&)
+HarmonyLib.MethodCopier:Finalize(Emitter, List`1, Boolean&)
+HarmonyLib.MethodPatcher:CreateReplacement(Dictionary`2&)
+HarmonyLib.PatchFunctions:UpdateWrapper(MethodBase, PatchInfo)
+HarmonyLib.PatchClassProcessor:ProcessPatchJob(Job)
+HarmonyLib.PatchClassProcessor:PatchWithAttributes(MethodBase&)
+HarmonyLib.PatchClassProcessor:Patch()
+HarmonyLib.Harmony:<PatchAll>b__10_0(Type)
+HarmonyLib.CollectionExtensions:Do(IEnumerable`1, Action`1)
+HarmonyLib.Harmony:PatchAll(Assembly)
+PrisonLabor.HarmonyPatches.HPatcher:Init()
+PrisonLabor.Initialization:.cctor()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(IntPtr)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(RuntimeTypeHandle)
+Verse.StaticConstructorOnStartupUtility:CallAll()
+Verse.<>c:<DoPlayLoad>b__4_2()
+Verse.LongEventHandler:ExecuteToExecuteWhenFinished()
+Verse.LongEventHandler:UpdateCurrentAsynchronousEvent()
+Verse.LongEventHandler:LongEventsUpdate(Boolean&)
+Verse.Root:DMD<DMD<Update_Patch1>?-196705536::Update_Patch1>(Root)
+Verse.Root_Entry:Update()
+
+
+
+HarmonyLib.HarmonyException: Patching exception in method virtual System.Void RimWorld.Dialog_BillConfig::DoWindowContents(UnityEngine.Rect inRect) ---> System.Exception: Wrong null argument: ldloc.s NULL [Label58, Label59, Label60]
+  at HarmonyLib.MethodBodyReader+<>c__DisplayClass21_0.<FinalizeILCodes>b__2 (HarmonyLib.CodeInstruction codeInstruction) [0x0015c] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.CollectionExtensions.Do[T] (System.Collections.Generic.IEnumerable`1[T] sequence, System.Action`1[T] action) [0x00014] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.MethodBodyReader.FinalizeILCodes (HarmonyLib.Emitter emitter, System.Collections.Generic.List`1[T] transpilers, System.Collections.Generic.List`1[T] endLabels, System.Boolean& hasReturnCode) [0x001f7] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.MethodCopier.Finalize (HarmonyLib.Emitter emitter, System.Collections.Generic.List`1[T] endLabels, System.Boolean& hasReturnCode) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.MethodPatcher.CreateReplacement (System.Collections.Generic.Dictionary`2[System.Int32,HarmonyLib.CodeInstruction]& finalInstructions) [0x00209] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.PatchFunctions.UpdateWrapper (System.Reflection.MethodBase original, HarmonyLib.PatchInfo patchInfo) [0x00057] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.PatchClassProcessor.ProcessPatchJob (HarmonyLib.PatchJobs`1+Job[T] job) [0x0015d] in <2161c8330234450b8141397c32c11571>:0 
+   --- End of inner exception stack trace ---
+  at HarmonyLib.PatchClassProcessor.ReportException (System.Exception exception, System.Reflection.MethodBase original) [0x0010f] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.PatchClassProcessor.Patch () [0x00082] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.Harmony.<PatchAll>b__10_0 (System.Type type) [0x00007] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.CollectionExtensions.Do[T] (System.Collections.Generic.IEnumerable`1[T] sequence, System.Action`1[T] action) [0x00014] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.Harmony.PatchAll (System.Reflection.Assembly assembly) [0x00006] in <2161c8330234450b8141397c32c11571>:0 
+  at PrisonLabor.HarmonyPatches.HPatcher.Init () [0x0001d] in <09d3158e5bda4b7d9e819e7307f3baa9>:0 
+Verse.Log:Error(String, Boolean)
+PrisonLabor.HarmonyPatches.HPatcher:Init()
+PrisonLabor.Initialization:.cctor()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(IntPtr)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(RuntimeTypeHandle)
+Verse.StaticConstructorOnStartupUtility:CallAll()
+Verse.<>c:<DoPlayLoad>b__4_2()
+Verse.LongEventHandler:ExecuteToExecuteWhenFinished()
+Verse.LongEventHandler:UpdateCurrentAsynchronousEvent()
+Verse.LongEventHandler:LongEventsUpdate(Boolean&)
+Verse.Root:DMD<DMD<Update_Patch1>?-196705536::Update_Patch1>(Root)
+Verse.Root_Entry:Update()
+
+
+
+
+
+Type TextureChooser probably needs a StaticConstructorOnStartup attribute, because it has a field LeftArrow of type Texture2D. All assets must be loaded in the main thread.
+Verse.Log:Warning(String, Boolean)
+Verse.StaticConstructorOnStartupUtility:ReportProbablyMissingAttributes()
+Verse.<>c:<DoPlayLoad>b__4_2()
+Verse.LongEventHandler:ExecuteToExecuteWhenFinished()
+Verse.LongEventHandler:UpdateCurrentAsynchronousEvent()
+Verse.LongEventHandler:LongEventsUpdate(Boolean&)
+Verse.Root:DMD<DMD<Update_Patch1>?-196705536::Update_Patch1>(Root)
+Verse.Root_Entry:Update()
